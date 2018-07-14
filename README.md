@@ -1,6 +1,6 @@
-# wq-mis
+# manager
 
-> 万企商城后台管理系统
+> 后台管理系统
 
 ## Build Setup
 

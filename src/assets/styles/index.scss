@@ -1,0 +1,235 @@
+@import './color.scss';
+@import './element-ui.scss';
+@import './mixin.scss';
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+    background: #eef1f5;
+    height: 100%;
+}
+
+label {
+    font-weight: 700;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.no-padding {
+    padding: 0px !important;
+}
+
+.padding-content {
+    padding: 4px 0;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+}
+
+.fr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
+
+.pr-5 {
+    padding-right: 5px;
+}
+
+.pl-5 {
+    padding-left: 5px;
+}
+
+.dp-block {
+    display: block;
+}
+
+.dp-inline-block {
+    display: inline-block;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.form-button {
+    margin-bottom: 0
+}
+
+code {
+    background: #eef1f6;
+    padding: 15px 10px;
+    margin-bottom: 20px;
+    display: block;
+    line-height: 36px;
+    a {
+        color: #337ab7;
+        cursor: pointer;
+        &:hover {
+            color: rgb(32, 160, 255);
+        }
+    }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: all .2s ease
+}
+
+.fade-enter,
+.fade-leave-active {
+    opacity: 0;
+}
+
+.slide-fade-enter-active {
+    transition: all .3s ease;
+}
+
+.slide-fade-leave-active {
+    transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+.slide-fade-enter,
+.slide-fade-leave-to {
+    transform: translateX(10px);
+    opacity: 0;
+}
+
+.svg-icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+//refine vue-multiselect plugin
+.multiselect {
+    line-height: 16px;
+    min-height: 36px;
+}
+
+
+/*.multiselect--active {
+    z-index: 1000 !important;
+}*/
+
+.multiselect__select {
+    height: 34px;
+    padding: 4px 8px;
+}
+
+.multiselect__tags {
+    border-color: #bfcbd9;
+    min-height: 36px;
+    padding: 4px 40px 0 8px;
+    .multiselect__tag {
+        margin-bottom: 6px;
+        margin-top: 2px;
+    }
+}
+
+.multiselect__spinner {
+    top: 2px;
+    height: 33px;
+    border-radius: 5px;
+}
+
+.el-form-item.is-error .multiselect__tags {
+    border-color: #ff4949;
+}
+
+.multiselect__input,
+.multiselect__single {
+    padding: 3px 0 0 5px;
+    margin-bottom: 0px;
+}
+
+//refine simplemde
+.simplemde-container {
+    .editor-toolbar.fullscreen,
+    .CodeMirror-fullscreen {
+        z-index: 1003;
+    }
+}
+
+//github-corner
+.github-corner:hover .octo-arm {
+    animation: octocat-wave 560ms ease-in-out
+}
+
+@keyframes octocat-wave {
+    0%,
+    100% {
+        transform: rotate(0)
+    }
+    20%,
+    60% {
+        transform: rotate(-25deg)
+    }
+    40%,
+    80% {
+        transform: rotate(10deg)
+    }
+}
+
+@media (max-width:500px) {
+    .github-corner:hover .octo-arm {
+        animation: none
+    }
+    .github-corner .octo-arm {
+        animation: octocat-wave 560ms ease-in-out
+    }
+}
+
+.pagi-container {
+    margin-top: 10px;
+}
+
+.cropbox .vf-circle .cropper-view-box,
+.cropbox .vf-circle .cropper-face,
+.cropbox .preview-circle {
+    border-radius: 50% !important;
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+@include scrollBar;

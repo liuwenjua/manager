@@ -1,0 +1,156 @@
+//覆盖一些element-ui样式
+.el-menu-item,
+.el-submenu {
+    .iconfont {
+        vertical-align: baseline;
+        margin-right: 10px;
+    }
+}
+
+.el-submenu.is-active {
+    .el-submenu__title {
+        color: #20a0ff !important;
+    }
+}
+
+.el-upload {
+    input[type="file"] {
+        display: none !important;
+    }
+}
+
+.el-upload__input {
+    display: none;
+}
+
+//巡更穿梭框
+.patrolTransfer {
+    .el-transfer-panel {
+        width: 40% !important;
+    }
+    .el-transfer-panel__body {
+        height: 400px
+    }
+    .el-transfer-panel__list {
+        height: 362px
+    }
+}
+
+.el-popover.blue {
+    background: #20a0ff;
+    color: #fff;
+    border-radius: 4px;
+    border: 1px solid #20a0ff;
+    &[x-placement^=bottom] .popper__arrow {
+        border-bottom-color: #20a0ff;
+        &::after {
+            border-bottom-color: #20a0ff;
+        }
+    }
+    &[x-placement^=top] .popper__arrow {
+        border-top-color: #20a0ff;
+        &::after {
+            border-top-color: #20a0ff;
+        }
+    }
+    &[x-placement^=right] .popper__arrow {
+        border-right-color: #20a0ff;
+        &::after {
+            border-right-color: #20a0ff;
+        }
+    }
+    &[x-placement^=left] .popper__arrow {
+        border-left-color: #20a0ff;
+        &::after {
+            border-left-color: #20a0ff;
+        }
+    }
+}
+.box .el-tabs__header{
+    background: #409EFF;
+    border:none;
+}
+.box .el-tabs__nav{
+    width: 100%;
+    text-align: center;
+}
+.box .el-tabs__nav .el-tabs__item{
+    width: 50%;
+    font-size: 18px;
+    border-radius: 0;
+    color: #fff;
+}
+.box .el-tabs--card>.el-tabs__header .el-tabs__item.is-active{
+    border:none;
+    background: #fff;
+    border-radius: 0;
+    color: #409EFF;
+}
+.box .el-tabs--card>.el-tabs__header .el-tabs__item{
+    border:none;
+}
+.regist-btn .el-button--info{
+    background: rgb(144, 147, 153);
+    border-color: rgb(144, 147, 153);
+}
+.tab .el-tabs__nav{
+    width: 100%;
+    display:flex;
+}
+.tab .el-tabs__item{
+    flex:1;
+    text-align: center;
+}
+.app-list .portlet-box .el-card__body{
+    padding: 0;
+}
+.ipt-style textarea{
+    resize: none;
+}
+// .btn-show .el-upload--picture{
+//     visibility:visible ;
+//     display: block;
+// }
+// .btn-hide .el-upload--picture{
+//     visibility:hidden ;
+//     display: none;
+// }
+.upload-demo-one  .el-upload--picture-card{
+    width: 80px;
+    height: 80px;
+    position: relative;
+}
+.upload-demo-one .el-upload--picture-card i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -14px;
+    margin-top: -14px;
+}
+.ipt-textarea textarea{
+    min-height: 80px;
+    height: 80px;
+}
+.action-style .el-tabs__nav-scroll{
+    border-right: 1px solid #dcdfe6;
+}
+.action-style .el-tabs--left.el-tabs--card .el-tabs__item.is-left{
+    border:none;
+    border-bottom: 1px solid #dcdfe6;
+}
+.action-style .el-tabs--left.el-tabs--card .el-tabs__item.is-left:last-of-type{
+    border-bottom: none;
+}
+.action-style .el-tabs--left.el-tabs--card .el-tabs__nav{
+    border:none;
+}
+.action-style .el-tabs--left .el-tabs__header.is-left{
+    margin-right: 0;
+}
+.action-style .el-form--inline{
+    border-left: 1px solid #dcdfe6;
+    padding-left: 30px;
+}
+.carousel .el-carousel__container{
+    height: 440px;
+}
